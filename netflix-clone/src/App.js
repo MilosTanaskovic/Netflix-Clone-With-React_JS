@@ -4,10 +4,11 @@ import './App.css';
 import Row from './components/Row';
 import requests from './api/requests'
 import Banner from './components/Banner';
+import Nav from './components/Nav';
 function App() {
   return (
     <div className="app">
-      <p>Dancing With The Code!!!</p>
+      <Nav/>
       <Banner/>
       <Row 
       title="NETFLIX ORIGINALS" fetchUrl={ requests.fetchNetflixOriginals} 
