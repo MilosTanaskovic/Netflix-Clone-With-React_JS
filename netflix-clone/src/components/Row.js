@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 // import api
 import axios from '../api/axios';
 import requests from '../api/requests';
+// import components
+import Banner from './Banner';
 // import style
 import './Row.css';
 
@@ -23,6 +25,10 @@ const Row = (props) => {
  console.log(movies);
  return (
   <div className="row">
+    {/* Nav */}
+
+    {/*<Banner /> Banner */}
+    
     {/* title */}
     <h2>{title}</h2>
     {/* containers -> posters */}

@@ -3,13 +3,15 @@ import './App.css';
 // import components
 import Row from './components/Row';
 import requests from './api/requests'
+import Banner from './components/Banner';
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <p>Dancing With The Code!!!</p>
+      <Banner/>
       <Row 
       title="NETFLIX ORIGINALS" fetchUrl={ requests.fetchNetflixOriginals} 
-      isLargeRow
+      isLargeRow={true}
       />
 
       <Row title="Tranding Now" fetchUrl={ requests.fetchTrending} />
